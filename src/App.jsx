@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import useThemeStore from "./store/useThemeStore";
 import Moon from "./assets/moon.svg";
 import Todo from "./componets/Todo";
-
+import Lang from './componets/Lang'
 function App() {
   const { theme, changeTheme } = useThemeStore();
 
@@ -19,12 +19,13 @@ function App() {
       <header className="w-full flex justify-between items-center p-4 bg-gray-200 dark:bg-gray-800">
         <h1 className="text-xl font-bold">7-oy 5-dars</h1>
         <button onClick={changeTheme}>
-          <img className="w-[30px]" src={Moon} alt="Toggle Theme" />
+          <img className="w-[30px] cursor-pointer" src={Moon} alt="Toggle Theme" />
         </button>
       </header>
 
       <div className="w-full flex flex-col items-center gap-5 mt-10 mb-10">
         <Todo />
+        <Lang />
       </div>
     </div>
   );

@@ -1,7 +1,10 @@
+// src/store/useLanguageStore.js
 import { create } from "zustand";
 
+// Zustand do'koni orqali til holatini saqlash
 const useLanguageStore = create((set) => ({
-  language: "uz", // Default til - O‘zbekcha
+  language: "uz", // Boshlang'ich til: O'zbekcha
+  // Tilni yangilash uchun funksiya
   setLanguage: (lang) => set({ language: lang }),
 }));
 

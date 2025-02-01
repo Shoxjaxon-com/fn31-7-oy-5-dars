@@ -42,7 +42,7 @@ function Todo() {
 
               <button
                 onClick={() => removeTodo(index)}
-                className="border border-red-700 bg-red-700 text-white p-2 rounded-md"
+                className="border border-red-700 bg-red-700 text-white p-2 rounded-md cursor-pointer"
               >
                 Delete
               </button>
